@@ -51,31 +51,31 @@ Con estos pasos, tu entorno debería estar listo para ejecutar los scripts y uti
 El proyecto tiene la siguiente estructura de carpetas y archivos:
 
 OBJECTCLASSIFICATION-WITH-FASTSAM-AND-EMBEDDINGS/
-│
-├── core/ # Módulos principales del proyecto
-│ ├── DetectAndClassifyCLIP.py # Clase para la detección y clasificación con CLIP
-│ └── DetectAndClassifySigLIP.py # Clase para la detección y clasificación con SigLIP
-│
-├── data/ # Datos utilizados para ejemplos y pruebas
-│
-├── examples/ # Scripts de ejemplo para demostrar el uso de los módulos core
-│ ├── ClipAndMLPTraining.py
-│ ├── CreateEmbeddings_ObjectClassificationCLIP.py
-│ ├── CreateEmbeddings_ObjectClassificationSigLIP.py
-│ ├── FastSAMFullExample.py
-│ ├── FewShotObjectClassificationCLIP_VIDEO.py
-│ ├── FewShotObjectClassificationSigLIP_VIDEO.py
-│ ├── SigLIPEmbeddingsVisualization.py
-│ └── ZeroShotObjectClassification.py
-│
-├── FastSAM/ # Código fuente y dependencias para el modelo FastSAM
-│
-├── info/ # Documentación e información relevante
-│
-├── models/ # Modelos entrenados, incluyendo pesos de FastSAM
-│
-├── output/ # Salida generada por los scripts, como clasificaciones y visualizaciones
-│
-├── utils/ # Herramientas de utilidad para operaciones generales como preprocesamiento
-│ ├── CropSavingWithFastSAM.py
-│ └── CustomDataset.py
+
+- core/ # Módulos principales del proyecto
+    - DetectAndClassifyCLIP.py # Clase para la detección y clasificación con CLIP
+    - DetectAndClassifySigLIP.py # Clase para la detección y clasificación con SigLIP
+
+- data/ # Datos utilizados para ejemplos y pruebas
+
+- examples/ # Scripts de ejemplo para demostrar el uso de los módulos core
+    - ClipAndMLPTraining.py
+    - CreateEmbeddings_ObjectClassificationCLIP.py
+    - CreateEmbeddings_ObjectClassificationSigLIP.py
+    - FastSAMFullExample.py
+    - FewShotObjectClassificationCLIP_VIDEO.py
+    - FewShotObjectClassificationSigLIP_VIDEO.py
+    - SigLIPEmbeddingsVisualization.py
+    - ZeroShotObjectClassification.py
+
+- FastSAM/ # Código fuente y dependencias para el modelo FastSAM
+
+- info/ # Documentación e información relevante
+
+- models/ # Modelos entrenados, incluyendo pesos de FastSAM
+
+- output/ # Salida generada por los scripts, como clasificaciones y visualizaciones
+
+- utils/ # Herramientas de utilidad para operaciones generales como preprocesamiento
+    - CropSavingWithFastSAM.py
+    - CustomDataset.py
