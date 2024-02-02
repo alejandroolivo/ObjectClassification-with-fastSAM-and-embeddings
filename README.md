@@ -32,10 +32,10 @@ Para preparar el entorno necesario para ejecutar este proyecto, sigue los siguie
 3. (Opcional) Crea y activa un entorno virtual:
 ``` -m venv venv # Para activarlo, en Windows usa: venv\Scripts\activate ```
 
+5. Instala pytorch con la info de su web oficial, con CUDA o no, según tus preferencias.
+
 4. Instala las dependencias necesarias:
 ``` pip install -r requirements.txt ```
-
-Con estos pasos, tu entorno debería estar listo para ejecutar los scripts y utilizar el modelo FastSAM junto con las funcionalidades de clasificación mediante embeddings.
 
 ## Estructura del Proyecto
 
