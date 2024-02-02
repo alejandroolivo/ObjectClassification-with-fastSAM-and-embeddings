@@ -13,8 +13,7 @@ El proyecto está estructurado en directorios específicos para mantener los dat
 ### Descarga del Repositorio de FastSAM
 
 Además de los pesos, es necesario descargar el código fuente de FastSAM desde su repositorio oficial:
-
-git clone https://github.com/CASIA-IVA-Lab/FastSAM
+``` git clone https://github.com/CASIA-IVA-Lab/FastSAM ```
 
 Para usar el modelo FastSAM, es necesario descargar los pesos preentrenados. Sigue el siguiente enlace para descargar el archivo de pesos `FastSAM.pt` y colócalo dentro de la carpeta `models` de tu proyecto.
 
@@ -30,12 +29,10 @@ Para preparar el entorno necesario para ejecutar este proyecto, sigue los siguie
 2. Navega al directorio del proyecto:
 ``` cd OBJECTCLASSIFICATION-WITH-FASTSAM-AND-EMBEDDINGS ```
 
-(Opcional) Crea y activa un entorno virtual:
-``` python -m venv venv
-source venv/bin/activate  # En Windows usa: venv\Scripts\activate 
-```
+3. (Opcional) Crea y activa un entorno virtual:
+``` -m venv venv # Para activarlo, en Windows usa: venv\Scripts\activate ```
 
-3. Instala las dependencias necesarias:
+4. Instala las dependencias necesarias:
 ``` pip install -r requirements.txt ```
 
 Con estos pasos, tu entorno debería estar listo para ejecutar los scripts y utilizar el modelo FastSAM junto con las funcionalidades de clasificación mediante embeddings.
@@ -45,6 +42,7 @@ Con estos pasos, tu entorno debería estar listo para ejecutar los scripts y uti
 El proyecto tiene la siguiente estructura de carpetas y archivos:
 
 ### OBJECTCLASSIFICATION-WITH-FASTSAM-AND-EMBEDDINGS
+```
 - core/ # Módulos principales del proyecto
     - DetectAndClassifyCLIP.py # Clase para la detección y clasificación con CLIP
     - DetectAndClassifySigLIP.py # Clase para la detección y clasificación con SigLIP
@@ -55,6 +53,7 @@ El proyecto tiene la siguiente estructura de carpetas y archivos:
 - models/ # Modelos entrenados, incluyendo pesos de FastSAM
 - output/ # Salida generada por los scripts, como clasificaciones y visualizaciones
 - utils/ # Herramientas de utilidad para operaciones generales como preprocesamiento
+```
 
 ## Clases Core
 
