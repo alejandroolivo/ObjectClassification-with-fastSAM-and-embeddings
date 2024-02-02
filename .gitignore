@@ -1,0 +1,24 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+env/
+/.vscode/
+/.idea/
+/.pytest_cache/
+/.coverage
+.coverage
+.coverage.*
+htmlcov/
+dist/
+build/
+*.egg-info/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+Panoramic/
+private/
+mahou_classification_tests/
+models/
+FastSAM/
+output/
