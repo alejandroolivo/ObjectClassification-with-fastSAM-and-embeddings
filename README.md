@@ -95,3 +95,33 @@ El proyecto incluye una serie de visualizaciones que ayudan a entender cómo los
 
 ### Visualización 3D de t-SNE
 ![Visualización 3D de t-SNE](info/TSNE3D.png)
+
+## Ejemplos
+
+La carpeta `examples` contiene varios scripts de Python que sirven como ejemplos prácticos de cómo utilizar las clases core y las funcionalidades de detección y clasificación de objetos en diversas situaciones:
+
+### `CreateEmbeddings_ObjectClassificationCLIP.py`
+Muestra cómo generar y almacenar embeddings de objetos utilizando el modelo CLIP. Este proceso es esencial para la clasificación y el análisis posterior de los objetos detectados.
+
+### `CreateEmbeddings_ObjectClassificationSigLIP.py`
+Similar al script anterior pero utilizando el modelo SigLIP para la generación de embeddings. Este script es crucial para aquellos que deseen utilizar SigLIP en lugar de CLIP para sus tareas de clasificación.
+
+### `FastSAMFullExample.py`
+Proporciona un ejemplo completo de cómo utilizar el modelo FastSAM para la detección de objetos en imágenes. Es un punto de partida excelente para comprender el flujo de trabajo completo de detección con FastSAM.
+
+### `FewShotObjectClassificationCLIP_VIDEO.py`
+Demuestra cómo implementar la clasificación de objetos con pocos ejemplos (few-shot classification) en vídeos utilizando CLIP. Este script es particularmente valioso para situaciones en las que se dispone de un conjunto limitado de datos de entrenamiento.
+
+### `FewShotObjectClassificationSigLIP_VIDEO.py`
+Realiza tareas de clasificación de objetos con pocos ejemplos en vídeos, pero utilizando el modelo SigLIP. Es ideal para comparar la eficacia de SigLIP frente a CLIP en escenarios de few-shot learning.
+
+### `SigLIPEmbeddingsVisualization.py`
+Este script está diseñado para visualizar los embeddings generados por SigLIP, lo que ayuda a obtener una comprensión más profunda de cómo los objetos se agrupan en el espacio de características.
+
+### `ZeroShotObjectClassification.py`
+Ilustra cómo realizar clasificación de objetos sin necesidad de ejemplos previos (zero-shot classification) utilizando embeddings. Es un caso de uso avanzado para escenarios donde no se dispone de datos etiquetados para entrenamiento.
+
+![Visualización de Clasificación Zero-Shot](info/ZeroShot.png)
+
+### `ClipAndMLPTraining.py`
+Este script demuestra cómo se pueden entrenar modelos Multi-Layer Perceptron (MLP) utilizando los embeddings generados por el modelo CLIP. Es útil para entender cómo los embeddings pueden ser utilizados para entrenar clasificadores adicionales.
